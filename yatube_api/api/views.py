@@ -1,8 +1,14 @@
-from django.shortcuts import get_object_or_404
-from rest_framework import viewsets, permissions, filters, mixins, pagination
+from rest_framework import (viewsets,
+                            permissions,
+                            filters,
+                            mixins,
+                            pagination)
 
-from posts.models import Post, Group, Comment, Follow
-from .serializers import *
+from posts.models import Post, Group, Comment
+from .serializers import (PostSerializer,
+                          GroupSerializer,
+                          CommentSerializer,
+                          FollowSerializer)
 from .permissions import AuthorOrReadOnly, ReadOnly
 
 
@@ -78,8 +84,3 @@ class FollowViewSet(mixins.CreateModelMixin,
 
     def perform_create(self, serializer):
         serializer.save(user=self.request.user)
-
-
-
-
-
