@@ -5,7 +5,7 @@ from rest_framework import (viewsets,
                             mixins,
                             pagination)
 
-from posts.models import Post, Group, Comment
+from posts.models import Post, Group
 from .serializers import (PostSerializer,
                           GroupSerializer,
                           CommentSerializer,
