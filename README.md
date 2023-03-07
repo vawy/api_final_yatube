@@ -14,7 +14,6 @@ API было написано согласно документации.
 При разработке Yatube применялись:
 
 - Django 2.2.16
-- PyCharm
 - Django Rest Framework
 - Djoser
 
