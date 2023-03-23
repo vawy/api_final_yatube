@@ -23,8 +23,8 @@ API было написано согласно документации.
 Склонируйте данный проект с github(используем ssh) и перейдите в директорию с проектом
 
 ```sh
-git clone git@github.com:<your_username>/api_final_yatube.git
-cd folder_with_app
+git clone git@github.com:vawy/api_final_yatube.git
+cd api_final_yatube
 ```
 
 Создайте и активируйте виртуальное окружение, установите все необходимые пакеты
